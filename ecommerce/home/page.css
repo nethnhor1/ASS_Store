@@ -1,0 +1,412 @@
+        h3 {
+            color: #15ff00;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .game-card img {
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 10px auto;
+            border-radius: 10px;
+        }
+
+        .weather-particle {
+            position: fixed;
+            top: -10px;
+            z-index: 9999;
+            pointer-events: none;
+        }
+
+        .snow {
+            color: white;
+            font-size: 14px;
+            animation: fall linear infinite;
+            opacity: 0.8;
+        }
+
+        .rain {
+            width: 2px;
+            height: 18px;
+            background: #00f;
+            animation: rain-fall linear infinite;
+            opacity: 0.5;
+            border-radius: 2px;
+        }
+
+        .storm {
+            color: yellow;
+            font-size: 18px;
+            animation: storm-fall linear infinite;
+            opacity: 0.9;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes rain-fall {
+            to {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes storm-fall {
+            to {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+
+        .lightning-flash {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            opacity: 0;
+            z-index: 9998;
+            pointer-events: none;
+            animation: flash 0.2s ease-in-out;
+        }
+
+        @keyframes flash {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.8;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .buy-btn {
+            background: rgb(235, 174, 7);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 28px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .buy-btn:hover,
+        .buy-btn:focus {
+            background: #27ae60;
+            color: #fff;
+        }
+
+        footer {
+            background: #222;
+            color: #fff;
+            padding: 32px 0 24px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer .social-icons a {
+            color: #fff;
+            font-size: 28px;
+            margin: 0 10px;
+        }
+
+        footer .payment img {
+            width: 120px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer .copyright {
+            margin-top: 18px;
+            font-size: 14px;
+            color: #bbb;
+        }
+
+        .game-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            padding: 20px 0;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .banner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            padding: 20px 0;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 1.0s ease, visibility 1.5s ease;
+        }
+
+        #loader {
+            border: 8px solid #0c1be9ff;
+            border-top: 8px solid #00ff99;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .slider {
+            position: relative;
+            width: 90%;
+            max-width: 800px;
+            height: 400px;
+            margin: 40px auto;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .slides {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 1s ease-in-out;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .greeting {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1000;
+        }
+
+        header img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 28px;
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .header-right-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .off-canvas-menu {
+            position: fixed;
+            top: 0;
+            right: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #222;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+            transition: right 0.3s ease-in-out;
+            z-index: 999;
+            padding-top: 70px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .off-canvas-menu.active {
+            right: 0;
+        }
+
+        .off-canvas-menu nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .off-canvas-menu nav ul li {
+            border-bottom: 1px solid #444;
+        }
+
+        .off-canvas-menu nav ul li:last-child {
+            border-bottom: none;
+        }
+
+        .off-canvas-menu nav ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: #ebebeb;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .off-canvas-menu nav ul li a:hover {
+            background-color: #0e92a3;
+            color: #15ff00;
+        }
+
+        .off-canvas-icons {
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px solid #444;
+            margin-top: auto;
+            background-color: #333;
+        }
+
+        .off-canvas-icons a {
+            color: #fff;
+            font-size: 28px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .off-canvas-icons a:hover {
+            color: #15ff00;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            display: none;
+        }
+
+        .overlay.active {
+            display: block;
+        }
+
+        body.no-scroll {
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+        }
+
+        @media (min-width: 769px) {
+
+            .menu-toggle {
+                display: none;
+            }
+
+            .off-canvas-menu {
+                display: none;
+            }
+        }
+
+        #scrollUpBtn,
+        #scrollDownBtn {
+            position: fixed;
+            right: 20px;
+            padding: 14px 16px;
+            border: none;
+            border-radius: 50%;
+            background-color: #27ae60;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 999;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        #scrollUpBtn {
+            bottom: 80px;
+            display: none;
+        }
+
+        #scrollDownBtn {
+            bottom: 20px;
+        }
+
+        #scrollUpBtn:hover,
+        #scrollDownBtn:hover {
+            background-color: #15ff00;
+            transform: scale(1.1);
+        }
