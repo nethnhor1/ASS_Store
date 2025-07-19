@@ -19,7 +19,7 @@ ASS-Store is a simple web-based store management system built using **PHP**, **M
 
 - **PHP** – Server-side logic
 - **MySQL** – Database storage
-- **HTML/CSS** – Page structure and styling
+- **CSS** – Page structure and styling
 - **JavaScript** – Dynamic interactivity
 - **phpMyAdmin** – Optional DB management
 
