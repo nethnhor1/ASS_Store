@@ -1,15 +1,3 @@
-database:
-  host: localhost
-  user: root
-  password: ""
-  name: ass_store
-
-site:
-  name: ASS-Store
-  debug: true
-
----
-
 ## ⚙️ Installation
 
 ### ✅ Requirements
