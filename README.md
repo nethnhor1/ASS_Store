@@ -27,4 +27,7 @@ ASS-Store is a simple web-based store management system built using **PHP**, **M
 
 ## 📂 Folder Structure
 
-Store/--> vs code
+- ** Store/--> vs code
+
+## Run Code in Store Folder
+- 📂Strore --> 📂home --> index.php // use command php -S localhost:808 or search on website bar 👍 http://localhost/store/home/index.php
