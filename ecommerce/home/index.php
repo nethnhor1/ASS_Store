@@ -28,7 +28,6 @@
             <ul>
                 <li><a href="index.php">ទំព័រដើម</a></li>
                 <li><a href="../admin-login/index.php">អេដមីន</a></li>
-                <li><a href="../login-app/index.php">ចុះឈ្មោះ</a></li>
                 <li><a href="about.php">អំពីយើង</a></li>
                 <li><a href="#game-grid">កម្មវិធី</a></li>
                 <li><a href="#footer">ទាក់ទងមកយើង</a></li>
